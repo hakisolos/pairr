@@ -3,7 +3,7 @@ const path = require("path");
 const axios = require("axios");
 
 async function retrieveCreds(code, saveDir) {
-    const url = `https://cdn-haki.zone.id/files/${code}.json`;
+    const url = `https://cdn.haki.top/files/${code}.json`;
     const { data } = await axios.get(url, { responseType: "arraybuffer" });
 
     if (!fs.existsSync(saveDir)) {
@@ -17,3 +17,4 @@ async function retrieveCreds(code, saveDir) {
 
 
 //easy
+
