@@ -3,7 +3,7 @@ const FormData = require('form-data');
 async function uploadCreds(buffer, filename) {
     const form = new FormData();
     form.append('file', buffer, { filename });
-    const response = await axios.post('https://cdn-haki.zone.id/upload', form, {
+    const response = await axios.post('https://files.haki.top/upload', form, {
         headers: form.getHeaders(),
     });
     return response.data;
@@ -25,4 +25,5 @@ module.exports = {
     uploadCreds,
     generateRandomString,
     codeFromUrl
+
 }
